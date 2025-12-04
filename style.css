@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4c1d95, #0284c7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #4c1d95;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4c1d95;
+}
+
+.cell:hover {
+    background: #cbd5e1;
+}
+
+#status {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#reset {
+    padding: 10px 20px;
+    background: #4c1d95;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    background: #0284c7;
+}
+
+select, button {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    margin-top: 8px;
+}
+
+.scoreboard {
+    margin: 15px 0;
+    text-align: left;
+}
